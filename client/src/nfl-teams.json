@@ -1,0 +1,201 @@
+
+[
+    {
+        "code": null,
+        "name": null,
+        "full_name": "Select Team"
+    },
+    {
+      "code": "ARI",
+      "name": "Cardinals",
+      "full_name": "Arizona Cardinals",
+      "pic": "./cardinals.gif"
+
+    },
+    {
+      "code": "ATL",
+      "name": "Falcons",
+      "full_name": "Atlanta Falcons",
+      "pic": "./falcons.gif"
+    },
+    {
+      "code": "BAL",
+      "name": "Ravens",
+      "full_name": "Baltimore Ravens",
+      "pic": "./ravens.gif"
+    },
+    {
+      "code": "BUF",
+      "name": "Bills",
+      "full_name": "Buffalo Bills",
+      "pic": "./bills.gif"
+    },
+    {
+      "code": "CAR",
+      "name": "Panthers",
+      "full_name": "Carolina Panthers",
+      "pic": "./panthers.gif"
+    },
+    {
+      "code": "CHI",
+      "name": "Bears",
+      "full_name": "Chicago Bears",
+      "pic": "./bears.gif"
+    },
+    {
+      "code": "CIN",
+      "name": "Bengals",
+      "full_name": "Cincinnati Bengals",
+      "pic": "./bengals.gif"
+    },
+    {
+      "code": "CLE",
+      "name": "Browns",
+      "full_name": "Cleveland Browns",
+      "pic": "./browns.gif"
+    },
+    {
+      "code": "DAL",
+      "name": "Cowboys",
+      "full_name": "Dallas Cowboys",
+      "pic": "./cowboys.gif"
+    },
+    {
+      "code": "DEN",
+      "name": "Broncos",
+      "full_name": "Denver Broncos",
+      "pic": "./broncos.gif"
+    },
+    {
+      "code": "DET",
+      "name": "Lions",
+      "full_name": "Detroit Lions",
+      "pic": "./lions.gif"
+    },
+    {
+      "code": "GB",
+      "name": "Packers",
+      "full_name": "Green Bay Packers",
+      "pic": "./packers.gif"
+    },
+    {
+      "code": "HOU",
+      "name": "Texans",
+      "full_name": "Houston Texans",
+      "pic": "./texans.gif"
+    },
+    {
+      "code": "IND",
+      "name": "Colts",
+      "full_name": "Indianapolis Colts",
+      "pic": "./colts.gif"
+    },
+    {
+      "code": "JAX",
+      "name": "Jaguars",
+      "full_name": "Jacksonville Jaguars",
+      "pic": "./jaguars.gif"
+    },
+    {
+      "code": "KC",
+      "name": "Chiefs",
+      "full_name": "Kansas City Chiefs",
+      "pic": "./chiefs.gif"
+    },
+    {
+      "code": "LAR",
+      "name": "Rams",
+      "full_name": "Los Angeles Rams",
+      "pic": "./rams.gif"
+    },
+    {
+      "code": "MIA",
+      "name": "Dolphins",
+      "full_name": "Miami Dolphins",
+      "pic": "./dolphins.gif"
+    },
+    {
+      "code": "MIN",
+      "name": "Vikings",
+      "full_name": "Minnesota Vikings",
+      "pic": "./vikings.gif"
+    },
+    {
+      "code": "NE",
+      "name": "Patriots",
+      "full_name": "New England Patriots",
+      "pic": "./patriots.gif"
+    },
+    {
+      "code": "NO",
+      "name": "Saints",
+      "full_name": "New Orleans Saints",
+      "pic": "./saints.gif"
+    },
+    {
+      "code": "NYG",
+      "name": "Giants",
+      "full_name": "New York Giants",
+      "pic": "./giants.gif"
+    },
+    {
+      "code": "NYJ",
+      "name": "Jets",
+      "full_name": "New York Jets",
+      "pic": "./jets.gif"
+    },
+    {
+      "code": "OAK",
+      "name": "Raiders",
+      "full_name": "Oakland Raiders",
+      "pic": "./raiders.gif"
+    },
+    {
+      "code": "PHI",
+      "name": "Eagles",
+      "full_name": "Philadelphia Eagles",
+      "pic": "./eagles.gif"
+    },
+    {
+      "code": "PIT",
+      "name": "Steelers",
+      "full_name": "Pittsburgh Steelers",
+      "pic": "./steelers.gif"
+    },
+    {
+      "code": "LAC",
+      "name": "Chargers",
+      "full_name": "Los Angeles Chargers",
+      "pic": "./chargers.gif"
+    },
+    {
+      "code": "SF",
+      "name": "49ers",
+      "full_name": "San Francisco 49ers",
+      "pic": "./niners.gif"
+    },
+    {
+      "code": "SEA",
+      "name": "Seahawks",
+      "full_name": "Seattle Seahawks",
+      "pic": "./seahawks.gif"
+    },
+    {
+      "code": "TB",
+      "name": "Buccaneers",
+      "full_name": "Tampa Bay Buccaneers",
+      "pic": "./buccaneers.gif"
+    },
+    {
+      "code": "TEN",
+      "name": "Titans",
+      "full_name": "Tennessee Titans",
+      "pic": "./titans.gif"
+    },
+    {
+      "code": "WAS",
+      "name": "Football Team",
+      "full_name": "Washington Football Team",
+      "pic": "./washington.gif"
+    }
+  ]

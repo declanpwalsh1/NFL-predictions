@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* .top-bar {
+  position: fixed;
+} */
+
+.min-table {
+  font-size: 15px;
+  font-family: sans-serif;
+  border: 1px solid black;
+}
+
+.main-background {
+  background-color: grey;
+}
+
+.Header {
+  background-color: #61dafb;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  padding: 15px 15px 15px 15px;
+}
+
+.Games {
+  /* border: 1px solid black; */
+  margin: 0px 20px 0px 20px;
+}
+
+.picks-button {
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+}
+
+.navigate {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;;
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  margin: 100px 0px 0px 0px;
+}
+
+/* .SingleGame>img {
+  float: left;
+} */
+
+.HomeImage {
+  border: 1px solid black;
+  border-radius: 10%;
+  margin: 10px 0px 10px 0px;
+}
+
+.AwayImage {
+  border: 1px solid black;
+  border-radius: 10%;
+  margin: 10px 0px 10px 0px;
+}
+
+.choice {
+  border: 1px solid black;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.side-picks {
+  background-color: white;
+  border: 1px solid black;
+  height: 850px;
+  width: 400px;
+  position: fixed;
+  /* bottom: 50px; */
+  /* max-height: calc(100% - 50px); */
+  margin: 70px 0px 0px 20px;
+  z-index: 1;
+  top: 0;
+  left:0;
+  
+  /* float: left; */
+}
+
+.my-container {
+  float: left;
+}
+
+
+
+.SingleGame {
+  border: 1px solid black;
+  margin: 10px 70px 10px 70px;
+  padding: 10px 0px 5px 0px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+
+.search>label {
+  margin: 10px 10px 10px 10px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
