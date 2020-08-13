@@ -16,6 +16,7 @@ const TrainGames = require('../models/TrainGames');
 //     }
 // });
 
+//ff
 router.get('/', async (req, res) => {
     try {
         const user = await TestGames.find().limit(5);
