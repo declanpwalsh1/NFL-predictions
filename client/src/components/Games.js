@@ -19,24 +19,21 @@ class Games extends Component {
         this.setState(() => ({ gameData: game, isOpen: true }))
     }
 
-    setPicks = (data) => {
-        console.log('picked')
-    }
-
     render() {
         return (
             <div className="Games">
                 {this.props.gamesList.map((game1, index) => (
-                    <Game 
-                        key={index.toString()}
-                        game={game1}
-                        images={true}
-                        num={this.props.num}
-                        sendGameData={this.getGame}
-                        withPicks={true}
-                    />
-                ))}
-
+                       
+                        <Game 
+                            key={index}
+                            id={index}
+                            game={game1}
+                            images={true}
+                            num={this.props.num}
+                            withPicks={true}
+                        />
+                    ))
+                }   
                 <GameModal
                     isOpen={this.state.isOpen}
                     toggleClose={this.toggleModal}

@@ -28,10 +28,10 @@
   padding: 15px 15px 15px 15px;
 }
 
-.Games {
-  /* border: 1px solid black; */
+/* .Games {
+  border: 1px solid black;
   margin: 0px 20px 0px 20px;
-}
+} */
 
 .picks-button {
   border-radius: 5px;
@@ -76,18 +76,18 @@
 
 .side-picks {
   background-color: white;
-  border: 1px solid black;
-  height: 850px;
-  width: 400px;
-  position: fixed;
-  /* bottom: 50px; */
-  /* max-height: calc(100% - 50px); */
-  margin: 70px 0px 0px 20px;
-  z-index: 1;
-  top: 0;
-  left:0;
-  
-  /* float: left; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 14px 10px 5px 10px;
+  height: 400px;
+}
+
+.side-media {
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 14px 5px 5px 5px;
+  /* height: 400px; */
 }
 
 .my-container {

@@ -1,13 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import '../App.css';
 import nflteams from '../nfl-teams.json';
+import Button from 'react-bootstrap/Button';
+import { PicksContext } from './PicksContext';
 const images = require.context('../images', true);
 
-
-const Image = ({url}) => {
-    const Img = require(`${url}`).ReactComponent;
-    return <Img/>
-}
 
 const MaxTable = (props) => {
     let home_short_name = nflteams.find(team => team.full_name === props.game.home_team).name;
@@ -112,23 +109,46 @@ const MinTable = (props) => {
 }
 
 
+
 export default function Game(props) {
     const [toggle, setToggle] = useState(true);
+    const [picks, setPick] = useContext(PicksContext);
+
+    // useEffect(() => {
+    //     if (isInitialMount.current) {
+    //         isInitialMount.current = false;
+    //     } else {
+    //         console.log("This is our pick in Game.js " + picks);
+    //     }
+        
+    // }, [pick])
+
+    const filter_picks = (obj) => {
+        const filteredPicks = picks.filter(pick => pick.key !== obj.key);
+        setPick([obj,...filteredPicks]);
+        // const filteredPicks = picks.filter()
+
+    }
+    
 
     let home_jpg = nflteams.find(team => team.full_name === props.game.home_team).pic;
     let away_jpg = nflteams.find(team => team.full_name === props.game.away_team).pic;
-    // let away_jpg = './falcons.gif';
     
     return (
         <div>
-            <div className="SingleGame" onClick={() => setToggle(!toggle)}>
+            <div className="SingleGame" >
                 <h3>{props.game.home_team} vs. {props.game.away_team}</h3>
                 <h6>{props.game.date}</h6>
                 <div className="container">
                     <div className="row">
                         { props.images &&
                             <div className="col-sm">
-                                <img className="HomeImage" src={images(home_jpg)}/>
+                                <img 
+                                    alt={props.game.home_team}
+                                    className="HomeImage"
+                                    src={images(home_jpg)}
+                                    onClick={() => filter_picks({"team":props.game.home_team, "key":props.id})}
+                                />
                             </div>
                         }
                         
@@ -143,15 +163,22 @@ export default function Game(props) {
                         </div>
                         { props.images &&
                             <div className="col-sm">
-                                <img className="AwayImage" src={images(away_jpg)}/>
+                                <img 
+                                    alt={props.game.away_team}
+                                    className="AwayImage" 
+                                    src={images(away_jpg)}
+                                    // onClick={() => setPick(prev => [{"team":props.game.away_team, "key": props.id},...prev])}
+                                    onClick={() => filter_picks({"team":props.game.away_team, "key":props.id})}
+                                    // onClick={() => console.log("clicked" + props.game.away_team)}
+                                />
+
                             </div>
                         }
                         
                     </div>
                 </div>
+                <Button variant="outline-primary" onClick={() => setToggle(!toggle)}>Expand</Button>
             </div>
         </div>
     )
 }
-
-// onClick={() => (props.sendGameData(props.game))

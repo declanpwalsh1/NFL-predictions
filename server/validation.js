@@ -9,8 +9,7 @@ const registerValidation = (data) => {
         password: Joi.string().min(6).required()
     });
     //VALIDATING
-    return schema.validate(data);
-    
+    return schema.validate(data);  
 }
 
 //Login validation
