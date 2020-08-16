@@ -20,9 +20,6 @@ const Nav = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to='/about'>About</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to='/search'>Search</Link>
-                    </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
                     <Link className="nav-link" to='/register'>Register</Link>

@@ -4,7 +4,8 @@ import axios from 'axios';
 import Footer from './Footer';
 import SidePicks from './SidePicks';
 import Grid from '@material-ui/core/Grid';
-import Media from './Media';
+// import Media from './Media';
+import Search from './Search';
 import {PicksContext} from '../components/PicksContext'
 
 
@@ -35,7 +36,7 @@ const Main = () => {
                     justify="center"
                     alignItems="stretch"
                 >
-                    <Grid item xs={3}>
+                    <Grid item xs={2}>
                         <PicksContext.Provider value={[ picks, setPick ]}>
                             <SidePicks />
                         </PicksContext.Provider>
@@ -43,13 +44,19 @@ const Main = () => {
                     <Grid item xs={6}>
                         <PicksContext.Provider value={[ picks, setPick ]}>
                             <Games 
+                                withModal={true}
                                 gamesList={games} 
                                 num={access}
+                                images={true}
                             />
                         </PicksContext.Provider>
                     </Grid>
-                    <Grid item xs={3}>
-                        <Media />
+                    <Grid item xs={4}>
+                        <div className="search-container">
+                            <PicksContext.Provider value={[ picks, setPick ]}>
+                                <Search />
+                            </PicksContext.Provider>
+                        </div>
                     </Grid>
                 </Grid>
             <div>

@@ -176,8 +176,8 @@ export default function Game(props) {
                         }
                         
                     </div>
-                </div>
-                <Button variant="outline-primary" onClick={() => setToggle(!toggle)}>Expand</Button>
+                </div>    
+                <Button variant="outline-primary" onClick={() => setToggle(!toggle)}>{ toggle ? "Expand" : "Collapse"}</Button>
             </div>
         </div>
     )

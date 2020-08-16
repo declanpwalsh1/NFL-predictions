@@ -16,7 +16,6 @@ const Choice = (props) => {
                     {/* game pick */}
                     <div className="choice">
                         {props.pick.team}
-                        {props.pick.key}
                     </div>
                 </div>
                 <div className="col col-sm-2">

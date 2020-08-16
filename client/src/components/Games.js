@@ -6,13 +6,13 @@ import '../App.css';
 class Games extends Component {
 
     state = {
-        isOpen: undefined,
+        isOpen: false,
         gameData: {}
 
     }
     
     toggleModal = () => {
-        this.setState(() => ({ isOpen: undefined}));
+        this.setState(() => ({ isOpen: !this.state.isOpen}));
     }
 
     getGame = (game) => {
@@ -24,11 +24,12 @@ class Games extends Component {
             <div className="Games">
                 {this.props.gamesList.map((game1, index) => (
                        
-                        <Game 
+                        <Game
+                            withModal={this.props.withModal} 
                             key={index}
                             id={index}
                             game={game1}
-                            images={true}
+                            images={this.props.images}
                             num={this.props.num}
                             withPicks={true}
                         />

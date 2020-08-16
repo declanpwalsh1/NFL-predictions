@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+.search-container {
+  background-color: white;
+  margin: 10px 30px 15px -5px;
+  border-radius: 10px;
+  height: 900px;
+  /* width: 600px; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+
 /* .top-bar {
   position: fixed;
 } */
@@ -80,6 +91,7 @@
   border-radius: 10px;
   margin: 14px 10px 5px 10px;
   height: 400px;
+  width: 300px;
 }
 
 .side-media {
